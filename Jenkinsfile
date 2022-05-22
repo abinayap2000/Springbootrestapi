@@ -8,7 +8,7 @@ pipeline {
         bat "mvn clean -f Springbootrestapi"
       }
     }
-    steps('package') {
+    stage('package') {
       steps {
         bat "mvn package -f Springbootrestapi"
       }
